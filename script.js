@@ -87,10 +87,23 @@ const terminalCode = document.getElementById("terminalCode");
 let balance = 5000;
 let historyList = [];
 
-function showProgram(){
+function showProgram(name){
 
-document.getElementById("terminal").style.display = "block";
+    document.getElementById("terminal").style.display = "block";
 
+    document.querySelector(".terminal-top span").innerHTML = "🏦 SBI Banking System";
+
+    document.getElementById("terminalCode").innerHTML = `
+        <h2>🏦 SBI Banking System</h2>
+
+        <p>This project cannot run directly in a browser because it is written in Python.</p>
+
+        <p><b>Download the Python file or run it using Python IDLE / VS Code.</b></p>
+
+        <button onclick="window.open('SBI_Banking_System.py')">
+            Download / Open Python File
+        </button>
+    `;
 }
 
 function login(){
