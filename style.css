@@ -1,0 +1,474 @@
+/* ===========================================
+   SAMARTH PORTFOLIO
+   Part 1
+=========================================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+
+background:linear-gradient(135deg,#03112a,#071d4f,#0b2d74);
+
+color:white;
+
+overflow-x:hidden;
+
+}
+
+#particles{
+
+position:fixed;
+
+width:100%;
+
+height:100%;
+
+left:0;
+
+top:0;
+
+z-index:-2;
+
+background:
+radial-gradient(circle at 20% 20%,rgba(0,200,255,.25),transparent 25%),
+radial-gradient(circle at 80% 30%,rgba(0,150,255,.15),transparent 30%),
+radial-gradient(circle at 50% 80%,rgba(0,255,255,.12),transparent 25%);
+
+}
+
+nav{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+padding:20px 70px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+background:rgba(0,0,40,.65);
+
+backdrop-filter:blur(14px);
+
+z-index:999;
+
+}
+
+.logo{
+
+font-size:28px;
+
+font-weight:bold;
+
+color:#41d9ff;
+
+}
+
+nav ul{
+
+display:flex;
+
+list-style:none;
+
+}
+
+nav li{
+
+margin-left:35px;
+
+}
+
+nav a{
+
+text-decoration:none;
+
+color:white;
+
+font-weight:500;
+
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:#41d9ff;
+
+}
+
+section{
+
+padding:120px 80px;
+
+}
+
+#home{
+
+min-height:100vh;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+}
+
+.left{
+
+width:55%;
+
+}
+
+.left h1{
+
+font-size:60px;
+
+margin:15px 0;
+
+}
+
+.left h2{
+
+font-size:28px;
+
+color:#41d9ff;
+
+height:40px;
+
+}
+
+.left p{
+
+font-size:19px;
+
+line-height:1.8;
+
+margin:25px 0;
+
+}
+
+#projectBtn{
+
+padding:15px 40px;
+
+border:none;
+
+border-radius:40px;
+
+background:#00aaff;
+
+color:white;
+
+font-size:18px;
+
+cursor:pointer;
+
+transition:.35s;
+
+box-shadow:0 0 25px #00aaff;
+
+}
+
+#projectBtn:hover{
+
+transform:scale(1.08);
+
+box-shadow:0 0 45px cyan;
+
+}
+
+.right{
+
+width:40%;
+
+display:flex;
+
+justify-content:center;
+
+}
+
+.circle{
+
+width:300px;
+
+height:300px;
+
+border-radius:50%;
+
+background:linear-gradient(45deg,#009dff,#00d9ff);
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:120px;
+
+box-shadow:0 0 70px #00c8ff;
+
+animation:float 4s ease-in-out infinite;
+
+}
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-20px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+/* ===========================================
+   ABOUT
+=========================================== */
+
+#about h2,
+#projects h2,
+#skills h2,
+#contact h2{
+
+text-align:center;
+
+font-size:40px;
+
+margin-bottom:50px;
+
+color:#4fdfff;
+
+}
+
+.about-card{
+
+max-width:900px;
+
+margin:auto;
+
+padding:40px;
+
+border-radius:20px;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(12px);
+
+border:1px solid rgba(255,255,255,.12);
+
+line-height:2;
+
+font-size:18px;
+
+}
+
+/* ===========================================
+   PROJECTS
+=========================================== */
+
+.projects-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+gap:30px;
+
+}
+
+.project-card{
+
+padding:30px;
+
+background:rgba(255,255,255,.08);
+
+border-radius:20px;
+
+backdrop-filter:blur(10px);
+
+transition:.4s;
+
+border:1px solid rgba(255,255,255,.12);
+
+}
+
+.project-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 0 30px #00c8ff;
+
+}
+
+.project-card h3{
+
+margin-bottom:20px;
+
+color:#44d9ff;
+
+}
+
+.project-card p{
+
+line-height:1.7;
+
+margin-bottom:25px;
+
+}
+
+.project-card button{
+
+padding:12px 30px;
+
+border:none;
+
+border-radius:30px;
+
+background:#00aaff;
+
+color:white;
+
+cursor:pointer;
+
+font-size:16px;
+
+transition:.3s;
+
+}
+
+.project-card button:hover{
+
+background:#00d4ff;
+
+box-shadow:0 0 20px cyan;
+
+}
+
+/* ===========================================
+   TERMINAL
+=========================================== */
+
+#terminal{
+
+display:none;
+
+position:fixed;
+
+left:50%;
+
+top:50%;
+
+transform:translate(-50%,-50%);
+
+width:80%;
+
+max-width:900px;
+
+background:#0b0b15;
+
+border-radius:15px;
+
+overflow:hidden;
+
+box-shadow:0 0 50px cyan;
+
+z-index:9999;
+
+}
+
+.terminal-top{
+
+display:flex;
+
+justify-content:space-between;
+
+padding:15px 20px;
+
+background:#1d1d2f;
+
+font-weight:bold;
+
+}
+
+#terminalCode{
+
+padding:25px;
+
+font-family:Consolas,monospace;
+
+font-size:15px;
+
+color:#4cff70;
+
+white-space:pre-wrap;
+
+height:400px;
+
+overflow:auto;
+
+}
+
+#runBtn{
+
+margin:20px;
+
+padding:12px 30px;
+
+border:none;
+
+background:#00aaff;
+
+color:white;
+
+border-radius:30px;
+
+cursor:pointer;
+
+}
+#bankApp{
+    padding:30px;
+}
+
+#bankApp input{
+    width:100%;
+    padding:12px;
+    margin:12px 0;
+    border-radius:8px;
+    border:none;
+    font-size:16px;
+}
+
+#bankApp button{
+    margin:8px;
+}
+
+#historyBox{
+    margin-top:20px;
+    color:#4cff70;
+}

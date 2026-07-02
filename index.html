@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samarth Sahu | Python Developer</title>
+    <!-- PyScript -->
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<div id="particles"></div>
+
+<nav>
+
+<div class="logo">
+<i class="fa-solid fa-terminal"></i>
+Samarth
+</div>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#projects">Programs</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<section id="home">
+
+<div class="left">
+
+<h3>Hello 👋</h3>
+
+<h1>I'm Samarth Sahu</h1>
+
+<h2 id="typing"></h2>
+
+<p>
+Welcome to my developer portfolio.
+I enjoy creating Python projects and learning Artificial Intelligence.
+</p>
+
+<button id="projectBtn">
+View My Programs
+</button>
+
+</div>
+
+<div class="right">
+
+<div class="circle">
+<i class="fa-solid fa-code"></i>
+</div>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<div class="about-card">
+
+<p>
+
+Hi! I'm <b>Samarth Sahu</b>.
+
+I love Python programming, Artificial Intelligence,
+problem solving and creating useful software.
+
+My dream is to become an excellent software developer
+and build amazing projects.
+
+</p>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2>My Programs</h2>
+
+<div class="projects-grid">
+
+<div class="project-card">
+
+<h3>🏦 SBI Banking System</h3>
+
+<p>
+
+A simple banking system written in Python.
+
+</p>
+
+<button onclick="showProgram()">
+
+View Code
+</button>
+
+</div>
+
+<div class="project-card">
+
+<h3>🧮 Calculator</h3>
+
+<p>
+
+Calculator created using Python.
+
+</p>
+
+<button onclick="showCalculator()">
+View Code
+</button>
+
+</div>
+
+<div class="project-card">
+
+<h3>🎲 Number Guessing Game</h3>
+
+<p>
+
+Fun Python guessing game.
+
+</p>
+
+<button onclick="showGuessGame()">
+View Code
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<div id="terminal">
+
+<div class="terminal-top">
+
+<span>SBI Banking System</span>
+
+<button onclick="closeTerminal()">✖</button>
+
+</div>
+
+<div id="bankApp">
+
+<div class="form">
+
+<h2>Login</h2>
+
+<input id="name" type="text" placeholder="Enter Name">
+
+<input id="birth" type="number" placeholder="Birth Year">
+
+<input id="pin" type="password" placeholder="PIN">
+
+<button onclick="login()">Login</button>
+
+</div>
+
+<div id="menu" style="display:none;">
+
+<h2 id="welcome"></h2>
+
+<h3>Balance : ₹<span id="balance">0</span></h3>
+
+<input id="amount" type="number" placeholder="Amount">
+
+<button onclick="deposit()">Deposit</button>
+
+<button onclick="withdraw()">Withdraw</button>
+
+<button onclick="history()">History</button>
+
+<button onclick="logout()">Exit</button>
+
+<div id="historyBox"></div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<section id="skills">
+
+<h2>My Skills</h2>
+
+<div class="about-card">
+
+<p>🐍 Python</p>
+<p>🤖 Artificial Intelligence</p>
+<p>🧠 Problem Solving</p>
+<p>💻 HTML & CSS</p>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact Me</h2>
+
+<div class="about-card">
+
+<p>📞 Phone: Your Number</p>
+
+<p>📧 Email: your@email.com</p>
+
+<p>📍 India</p>
+
+</div>
+
+</section>
+
+<footer>
+
+Made with ❤️ by Samarth Sahu
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
